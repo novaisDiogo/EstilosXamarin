@@ -19,7 +19,23 @@ namespace EstilosXamarin.Menu
 
         private void GoPagina1(object sender, EventArgs args)
         {
-            
+            Detail = new NavigationPage(new Paginas.ImplicitStylePage());
+            IsPresented = false;
+        }
+        private void GoPagina2(object sender, EventArgs args)
+        {
+            Detail = new NavigationPage(new Paginas.ExplicitStylePage());
+            IsPresented = false;
+        }
+        private void GoPagina3(object sender, EventArgs args)
+        {
+            Detail = new NavigationPage(new Paginas.GlobalStylePage());
+            IsPresented = false;
+        }
+        private void GoPagina4(object sender, EventArgs args)
+        {
+            Detail = new NavigationPage(new Paginas.InheritStylePage());
+            IsPresented = false;
         }
     }
 }
